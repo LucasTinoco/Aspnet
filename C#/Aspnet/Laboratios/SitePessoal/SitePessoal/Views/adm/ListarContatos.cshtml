@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "Contatos";
+}
+
+<h2>Contatos Realizados</h2>
+<h5 class="danger">@ViewBag.ErroMsg</h5>
+
+@foreach(var linha in ViewBag.caminhoArquivo)
+{
+        <p>
+            @linha
+        </p>
+}
+
+<div class="clearfix"></div>
